@@ -1,0 +1,3030 @@
+{
+  "name": "[Characterization Class] Comparing people vaccinated for flu in '11-12 vs '14-15",
+  "cohorts": [
+    {
+      "id": 2410,
+      "name": "[Characterization Class] Vaccinated for Flu (2011-2012)",
+      "description": null,
+      "createdDate": "2020-05-27 12:50",
+      "modifiedDate": "2020-05-27 12:51",
+      "expression": {
+        "cdmVersionRange": ">=5.0.0",
+        "PrimaryCriteria": {
+          "CriteriaList": [
+            {
+              "DrugExposure": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2011-09-01",
+                  "Op": "bt",
+                  "Extent": "2012-05-01"
+                },
+                "DrugTypeExclude": false
+              }
+            },
+            {
+              "ProcedureOccurrence": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2011-09-01",
+                  "Op": "bt",
+                  "Extent": "2012-05-01"
+                },
+                "ProcedureTypeExclude": false
+              }
+            },
+            {
+              "Observation": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2011-09-01",
+                  "Op": "bt",
+                  "Extent": "2012-05-01"
+                },
+                "ObservationTypeExclude": false
+              }
+            }
+          ],
+          "ObservationWindow": {
+            "PriorDays": 0,
+            "PostDays": 0
+          },
+          "PrimaryCriteriaLimit": {
+            "Type": "First"
+          }
+        },
+        "ConceptSets": [
+          {
+            "id": 0,
+            "name": "Flu Vaccine",
+            "expression": {
+              "items": [
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529218,
+                    "CONCEPT_NAME": "acellular pertussis vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798302",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879096,
+                    "CONCEPT_NAME": "A/New Caledonia/20/99 (H1n1)-Like Strain (A/New Caledonia/20/99 (Ivr-116)) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1003612",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879013,
+                    "CONCEPT_NAME": "Antigens Surface Of Virus Influenza, strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / Switzerland / 9715293/2013, Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1004394",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879093,
+                    "CONCEPT_NAME": "Antigens Surface Of Virus Influenza, strain B / Brisbane / 9/2014 Wild Type",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP995333",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878962,
+                    "CONCEPT_NAME": "A/Solomon Islands/3/2006 (H1n1)-Like Strain (A/Solomon Islands/3/2006 Ivr-145) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP993818",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879029,
+                    "CONCEPT_NAME": "A/Wisconsin/67/2005 (H3n2)-Like Strain (A/Wisconsin/67/2005 (Nymcx-161b)) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1000176",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878799,
+                    "CONCEPT_NAME": "B/Malaysia/2506/2004-Like Strain (B/Malaysia/2506/2004) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1002146",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19031041,
+                    "CONCEPT_NAME": "Diphtheria Antitoxin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3510",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529303,
+                    "CONCEPT_NAME": "diphtheria toxoid vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798304",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19048700,
+                    "CONCEPT_NAME": "Haemophilus B Conjugate Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "214606",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 586306,
+                    "CONCEPT_NAME": "Haemophilus capsular oligosaccharide",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "221105",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43012721,
+                    "CONCEPT_NAME": "Haemophilus influenzae",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1364467",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 530007,
+                    "CONCEPT_NAME": "Haemophilus influenzae b (Ross strain) capsular polysaccharide Meningococcal Protein Conjugate Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798444",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013078,
+                    "CONCEPT_NAME": "haemophilus influenzae immunoserum rabbit",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1367192",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19113026,
+                    "CONCEPT_NAME": "Haemophilus influenzae type b",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "50937",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529118,
+                    "CONCEPT_NAME": "Haemophilus influenzae type b, capsular polysaccharide inactivated tetanus toxoid conjugate vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798279",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40166605,
+                    "CONCEPT_NAME": "influenza A-California-7-2009-(H1N1)v-like virus vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "864701",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213326,
+                    "CONCEPT_NAME": "Influenza A monovalent (H5N1), adjuvanted, National stockpile 2013",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "160",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903441,
+                    "CONCEPT_NAME": "Influenza A virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1312375",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013137,
+                    "CONCEPT_NAME": "influenza A virus antigen, Panama 2007-99 (H3N2)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1366997",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275993,
+                    "CONCEPT_NAME": "influenza A virus (H1N1) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657128",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275996,
+                    "CONCEPT_NAME": "influenza A virus (H3N2) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657131",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40220901,
+                    "CONCEPT_NAME": "influenza A virus (H5N1) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1804260",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873918,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1303851",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 45776076,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-Texas-50-2012 (H3N2)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1541617",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873956,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1304122",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903442,
+                    "CONCEPT_NAME": "Influenza B virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1312376",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275999,
+                    "CONCEPT_NAME": "influenza B virus antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657134",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013138,
+                    "CONCEPT_NAME": "influenza B virus antigen, Hong Kong 330-2001",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1366998",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903602,
+                    "CONCEPT_NAME": "influenza B virus, B Panama-45-90 hemmagglutinin antigen, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1313274",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40164828,
+                    "CONCEPT_NAME": "influenza B virus vaccine B/Brisbane/60/2008 antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "857921",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43531944,
+                    "CONCEPT_NAME": "Influenza B virus vaccine, B-Massachusetts-2-2012-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1427022",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873961,
+                    "CONCEPT_NAME": "Influenza B virus vaccine, B-Wisconsin-1-2010-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1303855",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213141,
+                    "CONCEPT_NAME": "influenza, high dose seasonal, preservative-free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "135",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 2108802,
+                    "CONCEPT_NAME": "Influenza immunization administered or previously received (HIV) (P-ESRD)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "4274F",
+                    "DOMAIN_ID": "Observation",
+                    "VOCABULARY_ID": "CPT4",
+                    "CONCEPT_CLASS_ID": "CPT4"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213142,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "153",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213143,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, preservative free, quadrivalent",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "171",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213144,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, quadrivalent with preservative",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "186",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213145,
+                    "CONCEPT_NAME": "influenza, injectable, quadrivalent, contains preservative",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "158",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213146,
+                    "CONCEPT_NAME": "Influenza, injectable, quadrivalent, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "150",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213147,
+                    "CONCEPT_NAME": "Influenza, injectable,quadrivalent, preservative free, pediatric",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "161",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213148,
+                    "CONCEPT_NAME": "influenza, intradermal, quadrivalent, preservative free, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "166",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213150,
+                    "CONCEPT_NAME": "influenza, live, intranasal, quadrivalent",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "149",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213327,
+                    "CONCEPT_NAME": "influenza nasal, unspecified formulation",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "151",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213153,
+                    "CONCEPT_NAME": "Influenza, seasonal, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "141",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213154,
+                    "CONCEPT_NAME": "Influenza, seasonal, injectable, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "140",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 4313306,
+                    "CONCEPT_NAME": "Influenza vaccination",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "86198006",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "SNOMED",
+                    "CONCEPT_CLASS_ID": "Procedure"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 21601333,
+                    "CONCEPT_NAME": "Influenza vaccines",
+                    "STANDARD_CONCEPT": "C",
+                    "STANDARD_CONCEPT_CAPTION": "Classification",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "J07BB",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "ATC",
+                    "CONCEPT_CLASS_ID": "ATC 4th"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878617,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / South Australia / 55/2014 Ivr-175",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP999126",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879023,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / Switzerland / 9715293/2013, Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP998063",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878713,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain B / Phuket / 3073/2013",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP989577",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879091,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / South Australia / 55/2014 Type Wild",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP993272",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878953,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, Inactivated, Strain B / Phuket / 3073/2013 & ndash; Analogue strain B / Utah / 9/2014, Wild Type",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP997977",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879025,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigens, strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP991645",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878619,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, strain A / Victoria / 361/2011 H3N2 - Derived Strain Used Ivr-165",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1003334",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213140,
+                    "CONCEPT_NAME": "influenza virus vaccine, H5N1, A/Vietnam/1203/2004 (national stockpile)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "123",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40224997,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-179A (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005929",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225012,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-181 (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1006250",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40240922,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-Christchurch-16-2010 NIB-74 (H1N1) (A-California-7-2009) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1116738",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225028,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-Victoria-210-2009 X-187 (H3N2) (A-Perth-16-2009) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005931",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225031,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Live Attenuated, A-California-7-2009 (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005909",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225038,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Live Attenuated, A-Perth-16-2009 (H3N2) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005911",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213149,
+                    "CONCEPT_NAME": "influenza virus vaccine, live, attenuated, for intranasal use",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "111",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213156,
+                    "CONCEPT_NAME": "influenza virus vaccine, split virus (incl. purified surface antigen)-retired CODE",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "15",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213158,
+                    "CONCEPT_NAME": "influenza virus vaccine, unspecified formulation",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "88",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213159,
+                    "CONCEPT_NAME": "influenza virus vaccine, whole virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "16",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 1531633,
+                    "CONCEPT_NAME": "Introduction of Influenza Vaccine into Muscle, Percutaneous Approach",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3E02340",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "ICD10PCS",
+                    "CONCEPT_CLASS_ID": "ICD10PCS"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43018333,
+                    "CONCEPT_NAME": "Introduction of Influenza Vaccine into Subcutaneous Tissue, Percutaneous Approach",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3E01340",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "ICD10PCS",
+                    "CONCEPT_CLASS_ID": "ICD10PCS"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19011035,
+                    "CONCEPT_NAME": "Lactate",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "114202",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 509081,
+                    "CONCEPT_NAME": "meningococcal group C polysaccharide",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "29503",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213187,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, all formulations",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "128",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213186,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "127",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213188,
+                    "CONCEPT_NAME": "Novel Influenza-H1N1-09, live virus for nasal administration",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "125",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213189,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, preservative-free, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "126",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 44012722,
+                    "CONCEPT_NAME": "Outer Membrane Vesicles (Neisseria Meningitidis Group B Nz98/254 Strain)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1131632",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19033193,
+                    "CONCEPT_NAME": "Pertussis Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "8080",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213155,
+                    "CONCEPT_NAME": "seasonal influenza, intradermal, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "144",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213152,
+                    "CONCEPT_NAME": "Seasonal, quadrivalent, recombinant, injectable influenza vaccine, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "185",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213157,
+                    "CONCEPT_NAME": "Seasonal trivalent influenza vaccine, adjuvanted, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "168",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213151,
+                    "CONCEPT_NAME": "Seasonal, trivalent, recombinant, injectable influenza vaccine, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "155",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 35603451,
+                    "CONCEPT_NAME": "tetanus toxin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1735049",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529411,
+                    "CONCEPT_NAME": "tetanus toxoid vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798306",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                }
+              ]
+            }
+          }
+        ],
+        "QualifiedLimit": {
+          "Type": "First"
+        },
+        "ExpressionLimit": {
+          "Type": "First"
+        },
+        "InclusionRules": [],
+        "CensoringCriteria": [],
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {}
+      }
+    },
+    {
+      "id": 2411,
+      "name": "[Characterization Class] Vaccinated for Flu (2014-2015)",
+      "description": null,
+      "createdDate": "2020-05-27 12:51",
+      "modifiedDate": "2020-05-27 12:52",
+      "expression": {
+        "cdmVersionRange": ">=5.0.0",
+        "PrimaryCriteria": {
+          "CriteriaList": [
+            {
+              "DrugExposure": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2014-09-01",
+                  "Op": "bt",
+                  "Extent": "2015-05-01"
+                },
+                "DrugTypeExclude": false
+              }
+            },
+            {
+              "ProcedureOccurrence": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2014-09-01",
+                  "Op": "bt",
+                  "Extent": "2015-05-01"
+                },
+                "ProcedureTypeExclude": false
+              }
+            },
+            {
+              "Observation": {
+                "CodesetId": 0,
+                "OccurrenceStartDate": {
+                  "Value": "2014-09-01",
+                  "Op": "bt",
+                  "Extent": "2015-05-01"
+                },
+                "ObservationTypeExclude": false
+              }
+            }
+          ],
+          "ObservationWindow": {
+            "PriorDays": 0,
+            "PostDays": 0
+          },
+          "PrimaryCriteriaLimit": {
+            "Type": "First"
+          }
+        },
+        "ConceptSets": [
+          {
+            "id": 0,
+            "name": "Flu Vaccine",
+            "expression": {
+              "items": [
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529218,
+                    "CONCEPT_NAME": "acellular pertussis vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798302",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879096,
+                    "CONCEPT_NAME": "A/New Caledonia/20/99 (H1n1)-Like Strain (A/New Caledonia/20/99 (Ivr-116)) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1003612",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879013,
+                    "CONCEPT_NAME": "Antigens Surface Of Virus Influenza, strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / Switzerland / 9715293/2013, Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1004394",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879093,
+                    "CONCEPT_NAME": "Antigens Surface Of Virus Influenza, strain B / Brisbane / 9/2014 Wild Type",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP995333",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878962,
+                    "CONCEPT_NAME": "A/Solomon Islands/3/2006 (H1n1)-Like Strain (A/Solomon Islands/3/2006 Ivr-145) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP993818",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879029,
+                    "CONCEPT_NAME": "A/Wisconsin/67/2005 (H3n2)-Like Strain (A/Wisconsin/67/2005 (Nymcx-161b)) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1000176",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878799,
+                    "CONCEPT_NAME": "B/Malaysia/2506/2004-Like Strain (B/Malaysia/2506/2004) Haemagglutinin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1002146",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19031041,
+                    "CONCEPT_NAME": "Diphtheria Antitoxin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3510",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529303,
+                    "CONCEPT_NAME": "diphtheria toxoid vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798304",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19048700,
+                    "CONCEPT_NAME": "Haemophilus B Conjugate Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "214606",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 586306,
+                    "CONCEPT_NAME": "Haemophilus capsular oligosaccharide",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "221105",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43012721,
+                    "CONCEPT_NAME": "Haemophilus influenzae",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1364467",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 530007,
+                    "CONCEPT_NAME": "Haemophilus influenzae b (Ross strain) capsular polysaccharide Meningococcal Protein Conjugate Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798444",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013078,
+                    "CONCEPT_NAME": "haemophilus influenzae immunoserum rabbit",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1367192",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19113026,
+                    "CONCEPT_NAME": "Haemophilus influenzae type b",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "50937",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529118,
+                    "CONCEPT_NAME": "Haemophilus influenzae type b, capsular polysaccharide inactivated tetanus toxoid conjugate vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798279",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40166605,
+                    "CONCEPT_NAME": "influenza A-California-7-2009-(H1N1)v-like virus vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "864701",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213326,
+                    "CONCEPT_NAME": "Influenza A monovalent (H5N1), adjuvanted, National stockpile 2013",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "160",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903441,
+                    "CONCEPT_NAME": "Influenza A virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1312375",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013137,
+                    "CONCEPT_NAME": "influenza A virus antigen, Panama 2007-99 (H3N2)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1366997",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275993,
+                    "CONCEPT_NAME": "influenza A virus (H1N1) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657128",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275996,
+                    "CONCEPT_NAME": "influenza A virus (H3N2) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657131",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40220901,
+                    "CONCEPT_NAME": "influenza A virus (H5N1) antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1804260",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873918,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1303851",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 45776076,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-Texas-50-2012 (H3N2)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1541617",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873956,
+                    "CONCEPT_NAME": "Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1304122",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903442,
+                    "CONCEPT_NAME": "Influenza B virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1312376",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 46275999,
+                    "CONCEPT_NAME": "influenza B virus antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1657134",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43013138,
+                    "CONCEPT_NAME": "influenza B virus antigen, Hong Kong 330-2001",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1366998",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42903602,
+                    "CONCEPT_NAME": "influenza B virus, B Panama-45-90 hemmagglutinin antigen, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1313274",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40164828,
+                    "CONCEPT_NAME": "influenza B virus vaccine B/Brisbane/60/2008 antigen",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "857921",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43531944,
+                    "CONCEPT_NAME": "Influenza B virus vaccine, B-Massachusetts-2-2012-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1427022",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 42873961,
+                    "CONCEPT_NAME": "Influenza B virus vaccine, B-Wisconsin-1-2010-like virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1303855",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213141,
+                    "CONCEPT_NAME": "influenza, high dose seasonal, preservative-free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "135",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 2108802,
+                    "CONCEPT_NAME": "Influenza immunization administered or previously received (HIV) (P-ESRD)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "4274F",
+                    "DOMAIN_ID": "Observation",
+                    "VOCABULARY_ID": "CPT4",
+                    "CONCEPT_CLASS_ID": "CPT4"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213142,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "153",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213143,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, preservative free, quadrivalent",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "171",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213144,
+                    "CONCEPT_NAME": "Influenza, injectable, Madin Darby Canine Kidney, quadrivalent with preservative",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "186",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213145,
+                    "CONCEPT_NAME": "influenza, injectable, quadrivalent, contains preservative",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "158",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213146,
+                    "CONCEPT_NAME": "Influenza, injectable, quadrivalent, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "150",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213147,
+                    "CONCEPT_NAME": "Influenza, injectable,quadrivalent, preservative free, pediatric",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "161",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213148,
+                    "CONCEPT_NAME": "influenza, intradermal, quadrivalent, preservative free, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "166",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213150,
+                    "CONCEPT_NAME": "influenza, live, intranasal, quadrivalent",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "149",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213327,
+                    "CONCEPT_NAME": "influenza nasal, unspecified formulation",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "151",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213153,
+                    "CONCEPT_NAME": "Influenza, seasonal, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "141",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213154,
+                    "CONCEPT_NAME": "Influenza, seasonal, injectable, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "140",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 4313306,
+                    "CONCEPT_NAME": "Influenza vaccination",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "86198006",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "SNOMED",
+                    "CONCEPT_CLASS_ID": "Procedure"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 21601333,
+                    "CONCEPT_NAME": "Influenza vaccines",
+                    "STANDARD_CONCEPT": "C",
+                    "STANDARD_CONCEPT_CAPTION": "Classification",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "J07BB",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "ATC",
+                    "CONCEPT_CLASS_ID": "ATC 4th"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878617,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / South Australia / 55/2014 Ivr-175",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP999126",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879023,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / Switzerland / 9715293/2013, Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP998063",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878713,
+                    "CONCEPT_NAME": "Influenza Virus Fragmented, Inactivated, Strain B / Phuket / 3073/2013",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP989577",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879091,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, Inactivated, Strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain A / South Australia / 55/2014 Type Wild",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP993272",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878953,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, Inactivated, Strain B / Phuket / 3073/2013 & ndash; Analogue strain B / Utah / 9/2014, Wild Type",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP997977",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36879025,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigens, strain A / Switzerland / 9715293/2013 H3N2 - Analogue Strain Nib-88",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP991645",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 36878619,
+                    "CONCEPT_NAME": "Influenza Virus Surface Antigen, strain A / Victoria / 361/2011 H3N2 - Derived Strain Used Ivr-165",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1003334",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213140,
+                    "CONCEPT_NAME": "influenza virus vaccine, H5N1, A/Vietnam/1203/2004 (national stockpile)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "123",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40224997,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-179A (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005929",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225012,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-181 (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1006250",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40240922,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-Christchurch-16-2010 NIB-74 (H1N1) (A-California-7-2009) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1116738",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225028,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Inactivated A-Victoria-210-2009 X-187 (H3N2) (A-Perth-16-2009) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005931",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225031,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Live Attenuated, A-California-7-2009 (H1N1) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005909",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40225038,
+                    "CONCEPT_NAME": "Influenza Virus Vaccine, Live Attenuated, A-Perth-16-2009 (H3N2) strain",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1005911",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213149,
+                    "CONCEPT_NAME": "influenza virus vaccine, live, attenuated, for intranasal use",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "111",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213156,
+                    "CONCEPT_NAME": "influenza virus vaccine, split virus (incl. purified surface antigen)-retired CODE",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "15",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213158,
+                    "CONCEPT_NAME": "influenza virus vaccine, unspecified formulation",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "88",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213159,
+                    "CONCEPT_NAME": "influenza virus vaccine, whole virus",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "16",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 1531633,
+                    "CONCEPT_NAME": "Introduction of Influenza Vaccine into Muscle, Percutaneous Approach",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3E02340",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "ICD10PCS",
+                    "CONCEPT_CLASS_ID": "ICD10PCS"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 43018333,
+                    "CONCEPT_NAME": "Introduction of Influenza Vaccine into Subcutaneous Tissue, Percutaneous Approach",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "3E01340",
+                    "DOMAIN_ID": "Procedure",
+                    "VOCABULARY_ID": "ICD10PCS",
+                    "CONCEPT_CLASS_ID": "ICD10PCS"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19011035,
+                    "CONCEPT_NAME": "Lactate",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "114202",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 509081,
+                    "CONCEPT_NAME": "meningococcal group C polysaccharide",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "29503",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213187,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, all formulations",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "128",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213186,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "127",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213188,
+                    "CONCEPT_NAME": "Novel Influenza-H1N1-09, live virus for nasal administration",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "125",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213189,
+                    "CONCEPT_NAME": "Novel influenza-H1N1-09, preservative-free, injectable",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "126",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 44012722,
+                    "CONCEPT_NAME": "Outer Membrane Vesicles (Neisseria Meningitidis Group B Nz98/254 Strain)",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "OMOP1131632",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm Extension",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 19033193,
+                    "CONCEPT_NAME": "Pertussis Vaccine",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "8080",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213155,
+                    "CONCEPT_NAME": "seasonal influenza, intradermal, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "144",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213152,
+                    "CONCEPT_NAME": "Seasonal, quadrivalent, recombinant, injectable influenza vaccine, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "185",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213157,
+                    "CONCEPT_NAME": "Seasonal trivalent influenza vaccine, adjuvanted, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "168",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 40213151,
+                    "CONCEPT_NAME": "Seasonal, trivalent, recombinant, injectable influenza vaccine, preservative free",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "155",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "CVX",
+                    "CONCEPT_CLASS_ID": "CVX"
+                  },
+                  "isExcluded": false,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 35603451,
+                    "CONCEPT_NAME": "tetanus toxin",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "1735049",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                },
+                {
+                  "concept": {
+                    "CONCEPT_ID": 529411,
+                    "CONCEPT_NAME": "tetanus toxoid vaccine, inactivated",
+                    "STANDARD_CONCEPT": "S",
+                    "STANDARD_CONCEPT_CAPTION": "Standard",
+                    "INVALID_REASON": "V",
+                    "INVALID_REASON_CAPTION": "Valid",
+                    "CONCEPT_CODE": "798306",
+                    "DOMAIN_ID": "Drug",
+                    "VOCABULARY_ID": "RxNorm",
+                    "CONCEPT_CLASS_ID": "Ingredient"
+                  },
+                  "isExcluded": true,
+                  "includeDescendants": true,
+                  "includeMapped": false
+                }
+              ]
+            }
+          }
+        ],
+        "QualifiedLimit": {
+          "Type": "First"
+        },
+        "ExpressionLimit": {
+          "Type": "First"
+        },
+        "InclusionRules": [],
+        "CensoringCriteria": [],
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {}
+      }
+    }
+  ],
+  "featureAnalyses": [
+    {
+      "id": 22,
+      "type": "PRESET",
+      "name": "Procedure Occurrence Medium Term",
+      "domain": "PROCEDURE",
+      "statType": "PREVALENCE",
+      "descr": "One covariate per procedure in the procedure_occurrence table in the medium term window.",
+      "design": "ProcedureOccurrenceMediumTerm",
+      "description": "One covariate per procedure in the procedure_occurrence table in the medium term window."
+    },
+    {
+      "id": 49,
+      "type": "PRESET",
+      "name": "Charlson Index",
+      "domain": "CONDITION",
+      "statType": "DISTRIBUTION",
+      "descr": "The Charlson comorbidity index (Romano adaptation) using all conditions prior to the window end.",
+      "design": "CharlsonIndex",
+      "description": "The Charlson comorbidity index (Romano adaptation) using all conditions prior to the window end."
+    },
+    {
+      "id": 67,
+      "type": "PRESET",
+      "name": "Condition Occurrence Long Term",
+      "domain": "CONDITION",
+      "statType": "PREVALENCE",
+      "descr": "One covariate per condition in the condition_occurrence table starting in the long term window.",
+      "design": "ConditionOccurrenceLongTerm",
+      "description": "One covariate per condition in the condition_occurrence table starting in the long term window."
+    },
+    {
+      "id": 74,
+      "type": "PRESET",
+      "name": "Demographics Gender",
+      "domain": "DEMOGRAPHICS",
+      "statType": "PREVALENCE",
+      "descr": "Gender of the subject.",
+      "design": "DemographicsGender",
+      "description": "Gender of the subject."
+    },
+    {
+      "id": 77,
+      "type": "PRESET",
+      "name": "Demographics Age",
+      "domain": "DEMOGRAPHICS",
+      "statType": "DISTRIBUTION",
+      "descr": "Age of the subject on the index date (in years).",
+      "design": "DemographicsAge",
+      "description": "Age of the subject on the index date (in years)."
+    },
+    {
+      "id": 88,
+      "type": "PRESET",
+      "name": "Drug Era Medium Term",
+      "domain": "DRUG",
+      "statType": "PREVALENCE",
+      "descr": "One covariate per drug in the drug_era table overlapping with any part of the medium term window.",
+      "design": "DrugEraMediumTerm",
+      "description": "One covariate per drug in the drug_era table overlapping with any part of the medium term window."
+    },
+    {
+      "id": 90,
+      "type": "PRESET",
+      "name": "Condition Occurrence Short Term",
+      "domain": "CONDITION",
+      "statType": "PREVALENCE",
+      "descr": "One covariate per condition in the condition_occurrence table starting in the short term window.",
+      "design": "ConditionOccurrenceShortTerm",
+      "description": "One covariate per condition in the condition_occurrence table starting in the short term window."
+    }
+  ],
+  "parameters": [],
+  "stratas": [],
+  "strataOnly": false,
+  "strataConceptSets": [],
+  "createdAt": "2020-05-27 12:57:45",
+  "updatedAt": "2020-05-27 13:00:33",
+  "skeletonType": "CohortCharacterizationStudy",
+  "skeletonVersion": "v0.0.1",
+  "packageName": null,
+  "organizationName": "OHDSI",
+  "stratifiedBy": null
+}
