@@ -6,9 +6,9 @@ Inside this folder you'll find SQL and JSON files from in-class examples.
 
 * __[The Book of OHDSI](http://book.ohdsi.org)__ – This is a book about the Observational Health Data Sciences and Informatics (OHDSI) collaborative. The OHDSI community wrote the book to serve as a central knowledge repository for all things OHDSI. The Book is a living document, community-maintained through open-source development tools, and evolves continuously.
   * A few highlighted chapters:
-     * Chapter 4: The Common Data Model (https://ohdsi.github.io/TheBookOfOhdsi/CommonDataModel.html)  - an overview of the CDM conventions
-     * Chapter 5: Standardized Vocabularies (https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html) – where you can learn about concepts, relationships, hierarchies
-     * Chapter 10: Defining Cohorts (https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) – where you can learn about building cohorts in ATLAS and in R
+     * [Chapter 4: The Common Data Model](https://ohdsi.github.io/TheBookOfOhdsi/CommonDataModel.html)  - an overview of the CDM conventions
+     * [Chapter 5: Standardized Vocabularies](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html) – where you can learn about concepts, relationships, hierarchies
+     * [Chapter 10: Defining Cohorts](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) – where you can learn about building cohorts in ATLAS and in R
 
 * __[OHDSI Github: OMOP CDM Wiki](https://ohdsi.github.io/CommonDataModel/cdm531.html)__ – for those who want to know what’s captured in each CDM domain (can be useful for cohort building / querying)
 
