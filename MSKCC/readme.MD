@@ -14,3 +14,7 @@ Inside this folder you'll find SQL and JSON files from in-class examples.
 
 * __OHDSI GitHub: [Cohort Diagnostics](https://github.com/ohdsi/cohortdiagnostics)__ and __[PheValuator](https://github.com/ohdsi/phevaluator)__  – community packages for phenotype evaluation
 * __Existing OHDSI Studies: [LEGEND](https://github.com/ohdsi/legend)__  and the __[OHDSI Studies repo](https://github.com/ohdsi-studies/)__  – places where you can see existing community work, you can reuse the concept sets/cohorts by importing the JSONs (under the folder: inst-> cohort) or  SQL (inst -> sql -> sql_server).
+
+* __[OHDSI GitHub: Data Quality Dashboard](https://github.com/ohdsi/dataqualitydashboard)__ and __[DQD Wiki](https://ohdsi.github.io/DataQualityDashboard/)__ - The goal of the Data Quality Dashboard (DQD) project is to design and develop an open-source tool to expose and evaluate observational data quality.
+
+* __[OHDSI GitHub: ACHILLES](https://github.com/OHDSI/Achilles)__ - Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES) is a tool to provide descriptive statistics and data quality checks on an OMOP CDM v5 databases.
